@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Attendance System</h1>
+        <p class="subtitle">Mark today's student attendance</p>
+
+        <div class="summary">
+            <div class="box">
+                <h3>Total Students</h3>
+                <p id="total">5</p>
+            </div>
+
+            <div class="box present-box">
+                <h3>Present</h3>
+                <p id="present">0</p>
+            </div>
+
+            <div class="box absent-box">
+                <h3>Absent</h3>
+                <p id="absent">0</p>
+            </div>
+        </div>
+
+        <div class="attendance-card">
+
+            <div class="student">
+                <span>Sanushia - 101</span>
+                <div>
+                    <button class="present-btn" onclick="markAttendance(this, 'present')">
+                        Present
+                    </button>
+
+                    <button class="absent-btn" onclick="markAttendance(this, 'absent')">
+                        Absent
+                    </button>
+                </div>
+            </div>
+
+            <div class="student">
+                <span>Priya - 102</span>
+                <div>
+                    <button class="present-btn" onclick="markAttendance(this, 'present')">
+                        Present
+                    </button>
+
+                    <button class="absent-btn" onclick="markAttendance(this, 'absent')">
+                        Absent
+                    </button>
+                </div>
+            </div>
+
+            <div class="student">
+                <span>Rahul - 103</span>
+                <div>
+                    <button class="present-btn" onclick="markAttendance(this, 'present')">
+                        Present
+                    </button>
+
+                    <button class="absent-btn" onclick="markAttendance(this, 'absent')">
+                        Absent
+                    </button>
+                </div>
+            </div>
+
+            <div class="student">
+                <span>Kavin - 104</span>
+                <div>
+                    <button class="present-btn" onclick="markAttendance(this, 'present')">
+                        Present
+                    </button>
+
+                    <button class="absent-btn" onclick="markAttendance(this, 'absent')">
+                        Absent
+                    </button>
+                </div>
+            </div>
+
+            <div class="student">
+                <span>Divya - 105</span>
+                <div>
+                    <button class="present-btn" onclick="markAttendance(this, 'present')">
+                        Present
+                    </button>
+
+                    <button class="absent-btn" onclick="markAttendance(this, 'absent')">
+                        Absent
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="reset-btn" onclick="resetAttendance()">
+            Reset Attendance
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
